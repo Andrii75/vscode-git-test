@@ -4,6 +4,9 @@ main {
 .key {
   color: green;
 }
+p {
+  color: green;
+}
 ul {
   color: orange;
 }
