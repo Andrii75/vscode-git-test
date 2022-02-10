@@ -14,27 +14,26 @@
       body {
         background-color: antiquewhite;
       }
-
       .rectangle {
-        background-color: aquamarine;
         height: 128px;
         width: 512px;
         padding: 16px;
         margin: 16px;
         border: 8px solid black;
       }
-      .rectan {
+
+      .rectangle1 {
+        background-color: aquamarine;
+        box-sizing: content-box;
+      }
+      .rectangle2 {
         background-color: azure;
-        height: 128px;
-        width: 512px;
-        padding: 16px;
-        margin: 16px;
-        border: 8px solid black;
+        box-sizing: border-box;
       }
     </style>
   </head>
   <body>
-    <div class="rectangle">Content Box Sizing</div>
-    <div class="rectan">Border Box Sizing</div>
+    <div class="rectangle1 rectangle">Content Box Sizing</div>
+    <div class="rectangle2 rectangle">Border Box Sizing</div>
   </body>
 </html>
