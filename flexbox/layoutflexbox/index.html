@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU="
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .header {
+        height: 40px;
+        background-color: yellow;
+        align-items: center;
+        display: flex;
+      }
+      footer {
+        display: flex;
+        height: 40px;
+        background-color: green;
+      }
+      .nav {
+        margin: 0;
+        display: flex;
+        list-style-type: none;
+      }
+      .nav_item {
+        margin-left: 16px;
+      }
+      .footer {
+        margin: auto;
+      }
+      .page {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+      .content {
+        flex-grow: 1;
+        display: flex;
+      }
+      .dashboard {
+        background-color: pink;
+        display: flex;
+        flex-grow: 1;
+        justify-content: center;
+        align-items: center;
+      }
+      .news {
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
+        margin-bottom: 16px;
+      }
+      .newslist {
+        margin: 0px;
+        padding: 0;
+
+        list-style-type: none;
+      }
+      .listnews {
+        height: 40px;
+        margin-left: 16px;
+        flex-direction: column;
+      }
+      aside {
+        background-color: grey;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <nav>
+          <ul class="nav">
+            <li class="nav_item">About</li>
+            <li class="nav_item">Products</li>
+            <li class="nav_item">Contacts</li>
+          </ul>
+        </nav>
+      </header>
+      <main class="content">
+        <section class="dashboard">
+          <h2>I can use Flexbox!!!</h2>
+        </section>
+        <aside>
+          <h2 class="news">News</h2>
+          <ul class="newslist">
+            <li class="listnews">News 1</li>
+            <li class="listnews">News 2</li>
+            <li class="listnews">News 3</li>
+          </ul>
+        </aside>
+      </main>
+
+      <footer><span class="footer">Footer</span></footer>
+    </div>
+  </body>
+</html>
