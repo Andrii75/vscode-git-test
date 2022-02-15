@@ -13,17 +13,20 @@
       * {
         box-sizing: border-box;
       }
-      div {
+      .text {
         margin: 16px;
         text-decoration: underline 1px dotted black;
+        position: relative;
       }
       span {
+        margin: 0;
         background-color: grey;
         color: white;
         border-radius: 4px;
         padding: 8px;
         display: none;
         position: absolute;
+        bottom: -40px;
       }
       .text:hover span {
         display: block;
