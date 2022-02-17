@@ -7,3 +7,6 @@ html {
   padding: 8px;
   list-style-type: none;
 }
+.properties-list {
+  line-height: 32px;
+}
