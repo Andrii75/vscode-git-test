@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU="
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .image-container {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-align: center;
+      }
+      .main-image {
+        border-radius: 20px;
+        max-width: 100%;
+      }
+      .gallery {
+        display: flex;
+      }
+      .opacity {
+        filter: opacity(50%);
+      }
+      .caption {
+        line-height: 30px;
+      }
+      .card {
+        box-shadow: 0px 7px 18px -8px rgba(0, 0, 0, 0.75);
+        margin: 16px;
+      }
+      .blur {
+        filter: blur(4px);
+      }
+      .invert {
+        filter: invert(100%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="image-container">
+      <img
+        class="main-image"
+        src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson15/task1/big.jpeg"
+        alt="Land with three"
+      />
+    </div>
+    <div class="gallery">
+      <figure class="card">
+        <img
+          class="opacity"
+          src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson15/task1/small.jpg"
+          alt="opacity"
+        />
+        <figcaption class="caption">opacity</figcaption>
+      </figure>
+      <figure class="card">
+        <img
+          class="blur"
+          src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson15/task1/small.jpg"
+          alt="opacity"
+        />
+        <figcaption class="caption">blur</figcaption>
+      </figure>
+      <figure class="card">
+        <img
+          class="invert"
+          src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson15/task1/small.jpg"
+          alt="opacity"
+        />
+        <figcaption class="caption">invert</figcaption>
+      </figure>
+    </div>
+  </body>
+</html>
