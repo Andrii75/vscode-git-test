@@ -13,17 +13,36 @@
       div {
         margin: 16px;
       }
+      .ln {
+        border: 1px solid black;
+      }
+      .age {
+        border: 1px solid black;
+      }
     </style>
   </head>
   <body>
     <form>
       <div class="form-control">
         <label for="lastName">Last Name</label>
-        <input type="text" name="lastName" value="Emerson" readonly />
+        <input
+          class="ln"
+          type="text"
+          name="lastName"
+          value="Emerson"
+          readonly
+        />
       </div>
       <div class="form-control">
         <label for="number">Age</label>
-        <input type="number" min="3" max="10" name="age" value="5" />
+        <input
+          class="age"
+          type="number"
+          min="3"
+          max="10"
+          name="age"
+          value="5"
+        />
       </div>
       <div class="form-control">
         <input
