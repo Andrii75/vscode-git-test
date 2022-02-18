@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU="
+      crossorigin="anonymous"
+    />
+    <style>
+      div {
+        margin: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <div class="form-control">
+        <label for="lastName">Last Name</label>
+        <input type="text" name="lastName" value="Emerson" readonly />
+      </div>
+      <div class="form-control">
+        <label for="number">Age</label>
+        <input type="number" min="3" max="10" name="age" value="17" />
+      </div>
+      <div class="form-control">
+        <input
+          type="checkbox"
+          disabled
+          name="agree"
+          label="Accept terms and conditions"
+        />
+        <label for="agree">Accept terms and conditions</label>
+      </div>
+      <div class="choose-gender">
+        <input type="radio" name="gender" checked />
+        <label for="gender">Male</label>
+        <input type="radio" name="gender" />
+        <label for="gender">Female</label>
+        <input type="radio" name="gender" />
+        <label for="gender">Secret</label>
+      </div>
+      <div class="form-control">
+        <textarea
+          name="description"
+          placeholder="Write description..."
+        ></textarea>
+      </div>
+      <div><button type="submit">Submit</button></div>
+    </form>
+  </body>
+</html>
