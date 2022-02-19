@@ -9,6 +9,31 @@
       integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI="
       crossorigin="anonymous"
     />
+    <style>
+      input[type='checkbox'] {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+      }
+      .checkbox {
+        position: relative;
+        padding-left: 35px;
+        font-size: 24px;
+        margin: 16px;
+      }
+      .checkmark {
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        display: inline-block;
+        background-color: #d3d3d3;
+        top: 0;
+        left: 0;
+      }
+      .checkbox input:checked + .checkmark {
+        background-color: #006400;
+      }
+    </style>
   </head>
 
   <body>
