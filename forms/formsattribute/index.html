@@ -18,25 +18,12 @@
   <body>
     <form>
       <div class="form-control">
-        <label for="lastName">Last Name</label>
-        <input
-          class="ln"
-          type="text"
-          name="lastName"
-          value="Emerson"
-          readonly
-        />
+        <label for="ln">Last Name</label>
+        <input type="text" name="lastName" value="Emerson" readonly id="ln" />
       </div>
       <div class="form-control">
-        <label for="number">Age</label>
-        <input
-          class="age"
-          type="number"
-          min="3"
-          max="10"
-          name="age"
-          value="17"
-        />
+        <label for="numb">Age</label>
+        <input type="number" min="3" max="10" name="age" value="17" id="numb" />
       </div>
       <div class="form-control">
         <input
@@ -44,15 +31,16 @@
           disabled
           name="agree"
           label="Accept terms and conditions"
+          id="accept"
         />
-        <label for="agree">Accept terms and conditions</label>
+        <label for="accept">Accept terms and conditions</label>
       </div>
       <div class="choose-gender">
-        <input type="radio" name="gender" checked />
+        <input type="radio" name="gend" id="gender" checked />
         <label for="gender">Male</label>
-        <input type="radio" name="gender" />
+        <input type="radio" name="gend" id="gender" />
         <label for="gender">Female</label>
-        <input type="radio" name="gender" />
+        <input type="radio" name="gend" id="gender" />
         <label for="gender">Secret</label>
       </div>
       <div class="form-control">
