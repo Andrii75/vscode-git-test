@@ -28,7 +28,7 @@
     background-color: #f2f2f2;
   }
   tbody > tr:hover {
-  background-color: #aaa;
+    background-color: #aaa;
      }
   caption {
     padding-bottom: 8px;
