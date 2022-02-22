@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+        <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+      integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .custom-button {
+            height: 50px;
+            width: 200px;
+            color: white;
+            background-color: coral;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 700;
+            cursor: pointer;
+            border: none;
+            text-transform: uppercase;
+            margin: 64px;
+        }
+        .custom-button:hover {
+            color: darkcyan;
+        }
+        .image-bird {
+            width: 32px;
+            height: 32px;
+            vertical-align: middle;
+            fill: white;
+        }
+        .custom-button:hover > .image-bird {
+            fill: green;
+        }
+    </style>
+</head>
+<body>
+    <button class="custom-button">
+         <object class="image-bird" data="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson18/task2/bird.svg" type="image/svg+xml" width="32px" height="32px"></object>
+        Catch the bird</button>
+        <button class="custom-button">
+            <i class="fa-solid fa-id-card"></i>
+            Create account
+        </button>
+</body>
+</html>
