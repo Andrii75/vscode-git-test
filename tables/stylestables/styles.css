@@ -5,9 +5,12 @@
             border-collapse: collapse;
         }
         tr {
-            padding: 4px;
+           
             text-align: right;
            height: 40px;
+        }
+        td {
+             padding: 4px;
         }
         table {
             width: 500px;
