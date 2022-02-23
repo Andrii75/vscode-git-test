@@ -21,7 +21,7 @@
         animation: rot 2s;
         animation-timing-function: linear ;
         animation-iteration-count: infinite;
-}
+    }
     .spinner-text {
         font-family: monospace;
         font-size: 16px;
@@ -29,23 +29,23 @@
         animation: blinking 2s ;
         animation-iteration-count: infinite;
         animation-timing-function: linear ;
-}
-        @keyframes blinking {
-    0% {
-            opacity: 0;
     }
-    50% {
+    @keyframes blinking {
+        0% {
+            opacity: 0;
+           }
+        50% {
             opacity: 1;
-    }
-     100% {
+            }
+        100% {
             opacity: 0;
+            }
     }
-}
-        @keyframes rot {
-    0% {
-        transform: rotate(0deg);
+    @keyframes rot {
+        0% {
+            transform: rotate(0deg);
+           }
+        100% {
+            transform: rotate(360deg);
+            }
     }
-    100% {
-        transform: rotate(360deg);
-    }
-}
