@@ -5,32 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-img{
-    display: none;
+main {
+    display: flex;
+}
+img {
     max-width: 100%;
-    margin:auto;
-}
-
-
-@media screen and (max-width: 400px) {
-    .small{
-        display: block;
-        max-width: 100%;
-    }
-}
-@media screen and (min-width: 400px) {
-    .big{
-        display: block;
-        max-width: 100%;
-    }
+    margin: auto;
 }
     </style>
 </head>
 <body>
     <main>
     <picture>
-  <img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson22/task3/example-399.jpg" alt="" class="small">
-   <img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson22/task3/example-600.jpg" alt="" class="big">
+        <source srcset="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson22/task3/small.jpg"media="(max-width:400px)">
+        <source srcset="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson22/task3/example-600.jpg"media="(min-width:400px)">
+        <img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson22/task3/example-600.jpg" alt="Tree">
+
 </main>
     </picture>
 </body>
