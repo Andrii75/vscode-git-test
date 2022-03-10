@@ -33,6 +33,12 @@ body {
 
 @media screen and (orientation: landscape) {
   .container {
+    margin: 8px;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .container {
     display: flex;
     flex-direction: row;
   }
