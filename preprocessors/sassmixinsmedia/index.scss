@@ -23,16 +23,14 @@
      @include for-extralarge-up {
          background-color: #c47;
      }
- }
-
- .container{
      @include landscape {
-    margin: 8px;
+         margin: 8px;
   }
-}
+ }
  .container {
      @include landscape {
          display: flex;
          flex-direction: row;
+         margin: 8px;
   }
 }
