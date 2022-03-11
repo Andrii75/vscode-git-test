@@ -36,7 +36,7 @@ html {
 
 .menu__item_active {
   color: yellow;
-  padding: 0 8px;
+  position: relative;
 }
 
 .submenu {
@@ -51,6 +51,7 @@ html {
   z-index: 1;
   list-style-type: none;
   visibility: hidden;
+  position: absolute;
 }
 
 .menu__item_active:hover .submenu {

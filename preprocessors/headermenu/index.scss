@@ -10,6 +10,7 @@ html {
 }
 .menu__item-text {
     text-transform: uppercase;
+    
 }
 .menu__item {
     list-style-type: none;
@@ -29,10 +30,10 @@ html {
 }
 .menu__item_active {
     color: yellow;
-    padding: 0 8px;
+    position: relative;
 }
 .submenu {
-     top: 3em;
+    top: 3em;
     left: 8px;
     margin: 0;
     padding: 0;
@@ -43,6 +44,7 @@ html {
     z-index: 1;
     list-style-type: none;
     visibility: hidden;
+    position: absolute;
 }
 .menu__item_active:hover .submenu {
     visibility: visible;
