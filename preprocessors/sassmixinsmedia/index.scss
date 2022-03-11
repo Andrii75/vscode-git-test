@@ -9,9 +9,9 @@
      height: 100vh;
  }
  .square {
+     margin: 16px;
      width: 100px;
      height: 100px;
-     margin: 8px;
      background-color: #ff7f50;
 
     @include for-medium-up {
@@ -31,6 +31,5 @@
      @include landscape {
          display: flex;
          flex-direction: row;
-         margin: 8px;
   }
 }
