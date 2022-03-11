@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Verdana";
+}
+
+span {
+  padding: 8px;
+  background-color: #faebd7;
+  border-radius: 4px;
+  text-transform: lowercase;
+  margin: auto;
+}
+
+.nav {
+  background-color: #ff7f50;
+}
+
+.prodList {
+  background-color: #006400;
+}
+
+.news {
+  background-color: #0ff;
+}
+
+.block {
+  height: 200px;
+  display: flex;
+  flex-grow: 1;
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .block {
+    min-width: 50%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .block {
+    flex-basis: 0;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
